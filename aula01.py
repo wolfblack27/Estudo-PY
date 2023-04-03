@@ -24,7 +24,7 @@ n2 = int(input("Digite uma numero maior que 0: \n"))
 if (n1>=0) and (n1<n2):
 
     print(f'Numeros pares de: {n1} até {n2}' )
-    vn1=n1
+    vn1=n1.
     while n1<=n2:
 
         if(n1%2==0):
