@@ -1,4 +1,4 @@
-# Estudo de Objetos em Python
+# Estudo de Objetos em Python definindo uma classe simples
 class TV:
     def __init__(self):
         self.tela=43
