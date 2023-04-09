@@ -10,4 +10,3 @@ requisicao = requests.get(f'https://economia.awesomeapi.com.br/json/daily/{lista
 dic_requicisao1 = requisicao.json()
 dic_requicisao2 = dic_requicisao1[0]
 print(dic_requicisao2['high'])
-
