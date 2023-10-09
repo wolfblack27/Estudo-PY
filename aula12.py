@@ -26,3 +26,18 @@ def atributos(**kweargs):
     pass
 
 atributos(nome='thiago',idade=35, altura=1.74)
+
+
+from requisicaocripto import fear_and_greed
+
+response=fear_and_greed(limite=2,formato ='json',date_format='world')
+"""
+{'name': 'Fear and Greed Index', 
+    'data': [
+        {'value': '48', 'value_classification': 'Neutral', 'timestamp': '14-05-2023', 'time_until_update': '-1684014484'},
+          {'value': '48', 'value_classification': 'Neutral', 'timestamp': '13-05-2023'}
+        ],
+    'metadata': {'error': None}}"""
+
+for dicionario in response['data']:
+    print(f'Valor:{dicionario["value"]} Classificação: {dicionario["value_classification"]}')

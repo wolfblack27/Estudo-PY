@@ -22,7 +22,20 @@ class TV:
     def local(self,novo_local):
         self.__local = novo_local
 
+
+listtvs = [];
     
-tv1 = TV(43,'Full HD','LG',1200,'B12')
-tv1.local = 'C12'
-print(tv1.local)
+tv1 = TV(43,'Full HD','LG',1100,'B12')
+tv2 = TV(40,'Full HD','LG',1000,'B12')
+tv3 = TV(41,'Full HD','LG',1100,'B12')
+tv4 = TV(33,'Full HD','LG',1000,'B12')
+tv5 = TV(53,'Full HD','LG',1200,'B12')
+
+listtvs.append(tv1)
+listtvs.append(tv2)
+listtvs.append(tv3)
+listtvs.append(tv4)
+listtvs.append(tv5)
+
+for tv in listtvs:
+    print(f'Localização: {tv.local} -- Preco: {tv.preco}')
