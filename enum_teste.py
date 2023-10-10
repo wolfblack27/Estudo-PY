@@ -6,4 +6,4 @@ class Corretoras(Enum):
     BayBit  =   3
 
 
-print(Corretoras.XBINGX.name)
+print(f'Valor do enumerador:{Corretoras.XBINGX.value} --- Nome do enumerador: {Corretoras.XBINGX.name}')
